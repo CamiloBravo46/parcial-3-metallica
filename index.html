@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metallica · Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=aria-1">
+</head>
+<body>
+
+  <!-- =========================================================
+       Indice que pereza666
+       Línea · sección  (también: Ctrl+F y busca el nombre + "777")
+       ---------------------------------------------------------
+         60  ÍCONOS
+         81  HEADER
+        127  HERO · SLIDER
+        191  NOTICIAS
+        227  GIRA M72
+        334  GUITAR HERO
+        400  MÚSICA · DISCOS 3D
+        509  INSTAGRAM
+        546  TIENDA
+        629  MUSEO · PARALLAX
+        651  FAN CLUB
+        680  FOOTER
+        716  DESPLEGABLE · MENÚ
+        808  DESPLEGABLE · NOTICIAS
+        900  DESPLEGABLE · TIENDA
+        944  DESPLEGABLE · VINILOS
+       1008  DESPLEGABLE · 72 SEASONS
+       1071  DESPLEGABLE · BOLETAS
+       1117  DESPLEGABLE · FECHAS
+       1155  DESPLEGABLE · VISTA RÁPIDA
+       1208  DESPLEGABLE · DÓNDE JUGAR GUITAR HERO
+       1270  DESPLEGABLE · SETLIST GUITAR HERO
+       1315  DESPLEGABLE · SOBRE GUITAR HERO
+       1364  DESPLEGABLE · REGISTRO FAN CLUB
+       1423  DESPLEGABLE · MUSEO EN MANTENIMIENTO
+       1460  SCRIPTS
+       ---------------------------------------------------------
+       Carpetas: css/styles.css · js/script.js · img/ · audio/
+       ========================================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ÍCONOS 777 -->
+  <!-- Se dibujan una sola vez y se reutilizan con <use href="#…"> -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icono-menu" viewBox="0 0 24 24" fill="none"><path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icono-usuario" viewBox="0 0 24 24" fill="none"><path d="M4 21C4 17 7.6 14 12 14C16.4 14 20 17 20 21M16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icono-bolsa" viewBox="0 0 24 24" fill="none"><path d="M5 8V7C4.72146 7 4.45553 7.11618 4.26628 7.32055C4.07702 7.52492 3.98158 7.79897 4.00295 8.0767L5 8ZM19 8L19.9971 8.0767C20.0184 7.79897 19.923 7.52492 19.7337 7.32055C19.5445 7.11618 19.2785 7 19 7V8ZM18 21V22C18.5225 22 18.957 21.5977 18.9971 21.0767L18 21ZM6 21L5.00295 21.0767C5.04302 21.5977 5.47746 22 6 22V21ZM8 8C8 8.55228 8.44772 9 9 9C9.55228 9 10 8.55228 10 8H9H8ZM14 8C14 8.55228 14.4477 9 15 9C15.5523 9 16 8.55228 16 8H15H14ZM5 8V9H19V8V7H5V8ZM19 8L18.0029 7.9233L17.0029 20.9233L18 21L18.9971 21.0767L19.9971 8.0767L19 8ZM18 21V20H6V21V22H18V21ZM6 21L6.99705 20.9233L5.99705 7.9233L5 8L4.00295 8.0767L5.00295 21.0767L6 21ZM9 8H10C10 6.63097 10.2985 5.57567 10.7146 4.89842C11.126 4.22871 11.5923 4 12 4V3V2C10.7077 2 9.67403 2.77129 9.01042 3.85158C8.35145 4.92433 8 6.36903 8 8H9ZM12 3V4C12.4077 4 12.874 4.22871 13.2854 4.89842C13.7015 5.57567 14 6.63097 14 8H15H16C16 6.36903 15.6485 4.92433 14.9896 3.85158C14.326 2.77129 13.2923 2 12 2V3Z" fill="currentColor"/></symbol>
+    <symbol id="icono-anterior" viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icono-siguiente" viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icono-cerrar" viewBox="0 0 24 24" fill="none"><path d="M5 5L12 12M12 12L19 19M12 12L19 5M12 12L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icono-buscar" viewBox="0 0 24 24" fill="none"><path d="M15.5 15.5L21 21M17 10.5C17 14.0899 14.0899 17 10.5 17C6.91015 17 4 14.0899 4 10.5C4 6.91015 6.91015 4 10.5 4C14.0899 4 17 6.91015 17 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
+
+
+
+
+
+
+
+
+
+
+  <!-- HEADER 777 -->
+  <header class="header">
+    <div class="header__inner contenedor">
+      <div class="header__lado">
+        <button class="icono-btn" aria-label="Abrir menú" data-abrir="menu">
+          <svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-menu"/></svg>
+        </button>
+        <nav class="nav nav--izq" aria-label="Secciones">
+          <a class="link link--claro" href="#noticias">Noticias</a>
+          <a class="link link--claro" href="#gira">Tour</a>
+          <a class="link link--claro" href="#guitar-hero">Guitar hero</a>
+          <a class="link link--claro" href="#instagram">Media</a>
+        </nav>
+      </div>
+      <a class="header__logo" href="#inicio" aria-label="Metallica, volver al inicio">
+        <img src="img/footer-logo-metallica.png" alt="Metallica">
+      </a>
+      <div class="header__lado">
+        <nav class="nav" aria-label="Más secciones">
+          <a class="link link--claro" href="#tienda">Tienda</a>
+          <a class="link link--claro" href="#museo">Museo</a>
+          <a class="link link--claro" href="#fan-club">Fan club</a>
+          <a class="link link--claro" href="#footer">Banda</a>
+        </nav>
+        <div class="header__iconos">
+          <button class="icono-btn icono-btn--cuenta" aria-label="Mi cuenta" data-abrir="registro">
+            <svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-usuario"/></svg>
+          </button>
+          <button class="icono-btn" aria-label="Carrito">
+            <svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-bolsa"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <!-- HERO · SLIDER 777 -->
+    <section class="hero" id="inicio" data-slider aria-label="Inicio">
+      <div class="slide hero__slide activo">
+        <img class="hero__fondo" src="img/hero.png" alt="Fan con la bandera de Colombia en un concierto de Metallica">
+        <div class="hero__overlay"></div>
+        <div class="hero__contenido contenedor">
+          <p class="label hero__antetitulo">Gira mundial · Latinoamérica 2027</p>
+          <h1 class="hero__titulo">M72 WORLD TOUR</h1>
+          <p class="hero__texto">Dos noches, cero canciones repetidas. Metallica vuelve con un escenario en 360° en medio del público y llega por primera vez a nuevas ciudades de Latinoamérica.</p>
+          <div class="hero__cta">
+            <button class="boton boton--rojo" data-abrir="boletas">Comprar boletas</button>
+            <button class="boton boton--claro" data-abrir="fechas">Ver fechas</button>
+          </div>
+        </div>
+      </div>
+      <div class="slide hero__slide">
+        <picture><source media="(max-width: 899px)" srcset="img/hero-2-mobile.png"><img class="hero__fondo hero__fondo--2" src="img/hero-2.png" alt="Portada de 72 Seasons"></picture>
+        <div class="hero__overlay hero__overlay--2"></div>
+        <div class="hero__contenido hero__contenido--2 contenedor">
+          <p class="label hero__antetitulo">Nuevo álbum</p>
+          <h2 class="hero__titulo">72 SEASONS</h2>
+          <p class="hero__texto">12 canciones, 77 minutos y la energía de una banda que no se detiene. Escúchalo en tu plataforma favorita o consíguelo en vinilo doble.</p>
+          <div class="hero__cta">
+            <button class="boton boton--rojo" data-abrir="album-72">Escuchar ahora</button>
+            <button class="boton boton--claro" data-abrir="tienda-panel">Ir a la tienda</button>
+          </div>
+        </div>
+      </div>
+      <div class="slide hero__slide">
+        <img class="hero__fondo hero__fondo--3" src="img/hero-3.png" alt="Portadas clásicas de Metallica">
+        <div class="hero__overlay hero__overlay--2"></div>
+        <div class="hero__contenido hero__contenido--2 contenedor">
+          <p class="label hero__antetitulo">Reediciones remasterizadas</p>
+          <h2 class="hero__titulo">VINILOS CLÁSICOS</h2>
+          <p class="hero__texto">Ride the Lightning, …And Justice for All, Load y más: los discos que marcaron cuatro décadas, de vuelta en vinilo de 180 g.</p>
+          <div class="hero__cta">
+            <button class="boton boton--rojo" data-abrir="vinilos">Comprar vinilos</button>
+            <button class="boton boton--claro" data-abrir="tienda-panel">Ver tienda</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="puntos contenedor hero__puntos">
+        <button class="punto activo" aria-label="Diapositiva 1"></button>
+        <button class="punto" aria-label="Diapositiva 2"></button>
+        <button class="punto" aria-label="Diapositiva 3"></button>
+      </div>
+
+      <button class="flecha flecha--claro hero__flecha hero__flecha--izq" data-anterior aria-label="Diapositiva anterior"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-anterior"/></svg></button>
+      <button class="flecha flecha--claro hero__flecha hero__flecha--der" data-siguiente aria-label="Diapositiva siguiente"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-siguiente"/></svg></button>
+
+      <picture><source media="(max-width: 899px)" srcset="img/hero-corte-mobile.svg"><img class="hero__corte" src="img/hero-corte.svg" alt=""></picture>
+      <picture><source media="(max-width: 899px)" srcset="img/hero-rayo-mobile.svg"><img class="hero__rayo" src="img/hero-rayo.svg" alt=""></picture>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- NOTICIAS 777 -->
+    <section class="noticias" id="noticias" aria-label="Últimas noticias">
+      <div class="contenedor">
+        <div class="encabezado">
+          <h2 class="super-titulo"><span class="solo-escritorio">ÚLTIMAS NOTICIAS</span><span class="solo-movil">NOTICIAS</span></h2>
+          <button class="link" data-abrir="noticias-panel"><span class="solo-escritorio">Todas las noticias</span><span class="solo-movil">Ver todas</span></button>
+        </div>
+        <div class="noticias__cards">
+          <a class="card-noticia" href="#">
+            <div class="card-noticia__imagen"><img src="img/noticia-1.png" alt="Afiche del concierto de 1999 en el Parque Simón Bolívar"></div>
+            <p class="texto-pequeno">2 de octubre, 2026</p>
+            <h3 class="subtitulo-2 card-noticia__titulo">RECORDANDO EL CONCIERTO DE 1999 EN EL PARQUE SIMÓN BOLÍVAR</h3>
+          </a>
+          <a class="card-noticia" href="#">
+            <div class="card-noticia__imagen"><img src="img/noticia-2.png" alt="Collage de portadas de Metallica"></div>
+            <p class="texto-pequeno">23 de octubre, 2026</p>
+            <h3 class="subtitulo-2 card-noticia__titulo">EL ARTE DE METALLICA: CUATRO DÉCADAS DE PORTADAS Y AFICHES</h3>
+          </a>
+          <a class="card-noticia" href="#">
+            <div class="card-noticia__imagen"><img src="img/noticia-3.png" alt="The Black Album"></div>
+            <p class="texto-pequeno">12 de agosto, 2026</p>
+            <h3 class="subtitulo-2 card-noticia__titulo">THE BLACK ALBUM CUMPLE 35 AÑOS</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- GIRA M72 777 -->
+    <picture><source media="(max-width: 899px)" srcset="img/sep-crema-rojo-mobile.svg"><img class="separador" src="img/sep-crema-rojo.svg" alt=""></picture>
+    <section class="gira" id="gira" aria-label="Gira M72">
+      <div class="letras letras--tour" aria-hidden="true">
+        <span>T</span><span>O</span><span>U</span><span>R</span>
+      </div>
+      <div class="contenedor">
+        <div class="encabezado">
+          <h2 class="super-titulo">GIRA M72</h2>
+          <button class="link link--claro" data-abrir="fechas"><span class="solo-escritorio">Ver todas las fechas</span><span class="solo-movil">Todas las fechas</span></button>
+        </div>
+
+        <div class="carrusel carrusel--gira" data-carrusel>
+          <div class="carrusel__ventana">
+            <div class="carrusel__fila" data-fila>
+              <article class="card-gira">
+                <div class="card-gira__info">
+                  <p class="subtitulo">29 DE OCTUBRE, 2026</p>
+                  <h3 class="titulo card-gira__ciudad">LAS VEGAS, NEVADA, ESTADOS UNIDOS</h3>
+                  <p class="label card-gira__lugar">Sphere</p>
+                </div>
+                <div class="card-gira__acciones">
+                  <a class="link link--claro" href="#" aria-label="Detalles del evento: Las Vegas, 29 de octubre de 2026">Detalles del evento</a>
+                  <p class="label card-gira__agotadas">Boletas agotadas</p>
+                  <a class="link link--claro" href="#" aria-label="Más info: Las Vegas, 29 de octubre de 2026">Más info</a>
+                </div>
+              </article>
+              <article class="card-gira">
+                <div class="card-gira__info">
+                  <p class="subtitulo">31 DE OCTUBRE, 2026</p>
+                  <h3 class="titulo card-gira__ciudad">LAS VEGAS, NEVADA, ESTADOS UNIDOS</h3>
+                  <p class="label card-gira__lugar">Sphere</p>
+                </div>
+                <div class="card-gira__acciones">
+                  <a class="link link--claro" href="#" aria-label="Detalles del evento: Las Vegas, 31 de octubre de 2026">Detalles del evento</a>
+                  <p class="label card-gira__agotadas">Boletas agotadas</p>
+                  <a class="link link--claro" href="#" aria-label="Más info: Las Vegas, 31 de octubre de 2026">Más info</a>
+                </div>
+              </article>
+              <article class="card-gira">
+                <div class="card-gira__info">
+                  <p class="subtitulo">19 DE NOVIEMBRE, 2026</p>
+                  <h3 class="titulo card-gira__ciudad">UNCASVILLE, CONNECTICUT, ESTADOS UNIDOS</h3>
+                  <p class="label card-gira__lugar">Mohegan Sun Arena</p>
+                </div>
+                <div class="card-gira__acciones">
+                  <a class="link link--claro" href="#" aria-label="Detalles del evento: Uncasville, 19 de noviembre de 2026">Detalles del evento</a>
+                  <p class="label card-gira__agotadas">Boletas agotadas</p>
+                  <a class="link link--claro" href="#" aria-label="Más info: Uncasville, 19 de noviembre de 2026">Más info</a>
+                </div>
+              </article>
+              <article class="card-gira">
+                <div class="card-gira__info">
+                  <p class="subtitulo">21 DE NOVIEMBRE, 2026</p>
+                  <h3 class="titulo card-gira__ciudad">UNCASVILLE, CONNECTICUT, ESTADOS UNIDOS</h3>
+                  <p class="label card-gira__lugar">Mohegan Sun Arena</p>
+                </div>
+                <div class="card-gira__acciones">
+                  <a class="link link--claro" href="#" aria-label="Detalles del evento: Uncasville, 21 de noviembre de 2026">Detalles del evento</a>
+                  <p class="label card-gira__agotadas">Boletas agotadas</p>
+                  <a class="link link--claro" href="#" aria-label="Más info: Uncasville, 21 de noviembre de 2026">Más info</a>
+                </div>
+              </article>
+              <article class="card-gira">
+                <div class="card-gira__info">
+                  <p class="subtitulo">6 DE MARZO, 2027</p>
+                  <h3 class="titulo card-gira__ciudad">BOGOTÁ, COLOMBIA</h3>
+                  <p class="label card-gira__lugar">Estadio El Campín</p>
+                </div>
+                <div class="card-gira__acciones">
+                  <a class="link link--claro" href="#" aria-label="Detalles del evento: Bogotá, 6 de marzo de 2027">Detalles del evento</a>
+                  <p class="label card-gira__disponibles">Boletas disponibles</p>
+                  <a class="link link--claro" href="#" aria-label="Más info: Bogotá, 6 de marzo de 2027">Más info</a>
+                </div>
+              </article>
+              <article class="card-gira">
+                <div class="card-gira__info">
+                  <p class="subtitulo">13 DE MARZO, 2027</p>
+                  <h3 class="titulo card-gira__ciudad">CIUDAD DE MÉXICO, MÉXICO</h3>
+                  <p class="label card-gira__lugar">Estadio GNP Seguros</p>
+                </div>
+                <div class="card-gira__acciones">
+                  <a class="link link--claro" href="#" aria-label="Detalles del evento: Ciudad de México, 13 de marzo de 2027">Detalles del evento</a>
+                  <p class="label card-gira__disponibles">Boletas disponibles</p>
+                  <a class="link link--claro" href="#" aria-label="Más info: Ciudad de México, 13 de marzo de 2027">Más info</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="carrusel__controles">
+            <div class="carrusel__progreso"><span class="carrusel__avance" data-avance></span></div>
+            <button class="flecha flecha--claro" data-anterior aria-label="Fechas anteriores"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-anterior"/></svg></button>
+            <button class="flecha flecha--claro" data-siguiente aria-label="Fechas siguientes"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-siguiente"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- GUITAR HERO 777 -->
+    <picture><source media="(max-width: 899px)" srcset="img/sep-rojo-negro-mobile.svg"><img class="separador" src="img/sep-rojo-negro.svg" alt=""></picture>
+    <section class="guitar-hero" id="guitar-hero" aria-label="Guitar Hero">
+      <div class="contenedor encabezado">
+        <div class="guitar-hero__pestanas super-titulo">
+          <h2>GUITAR HERO</h2>
+          <span class="guitar-hero__subtitulo">METALLICA</span>
+        </div>
+        <button class="link link--claro" data-abrir="gh-sobre">Más del juego</button>
+      </div>
+
+      <div class="gh-slider" data-slider>
+        <div class="slide gh-slide gh-slide--1 activo">
+          <img class="gh-slide__fondo" src="img/gh-fondo.png" alt="">
+          <img class="gh-slide__logo" src="img/gh-logo.png" alt="Guitar Hero Metallica">
+          <picture><source media="(max-width: 899px)" srcset="img/gh-franja-mobile.svg"><img class="gh-slide__franja" src="img/gh-franja.svg" alt=""></picture>
+          <picture><source media="(max-width: 899px)" srcset="img/gh-rayo-mobile.svg"><img class="gh-slide__rayo" src="img/gh-rayo.svg" alt=""></picture>
+          <div class="gh-slide__contenido">
+            <h3 class="gh-slide__titulo">GUITAR HERO: METALLICA</h3>
+            <p class="subtitulo-2 gh-slide__texto">¡Toca 49 canciones junto a la banda!</p>
+            <button class="boton boton--claro" data-abrir="gh-donde">Jugar ahora</button>
+          </div>
+        </div>
+        <div class="slide gh-slide gh-slide--foto">
+          <img class="gh-slide__fondo" src="img/gh-fondo-2.png" alt="">
+          <img class="gh-slide__logo" src="img/gh-logo.png" alt="Guitar Hero Metallica">
+          <picture><source media="(max-width: 899px)" srcset="img/gh-franja-mobile.svg"><img class="gh-slide__franja" src="img/gh-franja.svg" alt=""></picture>
+          <picture><source media="(max-width: 899px)" srcset="img/gh-rayo-mobile.svg"><img class="gh-slide__rayo" src="img/gh-rayo.svg" alt=""></picture>
+          <div class="gh-slide__contenido">
+            <h3 class="gh-slide__titulo">MODO CARRERA</h3>
+            <p class="subtitulo-2 gh-slide__texto">Del garaje de 1981 al escenario 360°</p>
+            <button class="boton boton--claro" data-abrir="gh-setlist">Ver setlist</button>
+          </div>
+        </div>
+        <div class="slide gh-slide gh-slide--foto">
+          <img class="gh-slide__fondo" src="img/gh-fondo-3.png" alt="">
+          <img class="gh-slide__logo" src="img/gh-logo.png" alt="Guitar Hero Metallica">
+          <picture><source media="(max-width: 899px)" srcset="img/gh-franja-mobile.svg"><img class="gh-slide__franja" src="img/gh-franja.svg" alt=""></picture>
+          <picture><source media="(max-width: 899px)" srcset="img/gh-rayo-mobile.svg"><img class="gh-slide__rayo" src="img/gh-rayo.svg" alt=""></picture>
+          <div class="gh-slide__contenido">
+            <h3 class="gh-slide__titulo">MODO BANDA</h3>
+            <p class="subtitulo-2 gh-slide__texto">Guitarra, bajo, batería y voz con tus amigos</p>
+            <button class="boton boton--claro" data-abrir="gh-sobre">Más info</button>
+          </div>
+        </div>
+
+        <div class="puntos gh-slider__puntos">
+          <button class="punto activo" aria-label="Diapositiva 1"></button>
+          <button class="punto" aria-label="Diapositiva 2"></button>
+          <button class="punto" aria-label="Diapositiva 3"></button>
+        </div>
+
+        <button class="flecha flecha--claro gh-slider__flecha gh-slider__flecha--izq" data-anterior aria-label="Diapositiva anterior de Guitar Hero"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-anterior"/></svg></button>
+        <button class="flecha flecha--claro gh-slider__flecha gh-slider__flecha--der" data-siguiente aria-label="Diapositiva siguiente de Guitar Hero"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-siguiente"/></svg></button>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- MÚSICA · DISCOS 3D 777 -->
+    <!-- Carrusel 3D por arrastre: el disco del centro grande, los de los lados
+         en perspectiva y más oscuros. Clic en el disco del centro = play. -->
+    <section class="musica" id="musica" aria-label="Música">
+      <div class="musica__fijo">
+        <img class="musica__fondo" src="img/ig-07.png" alt="" data-parallax>
+        <div class="musica__velo"></div>
+
+        <!-- Unión con Guitar Hero: corte diagonal con rayos (se mueve con el scroll) -->
+        <svg class="musica__corte" viewBox="0 0 1920 340" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="musica-sombra" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#000" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#000" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path class="musica__corte-sombra" d="M0 40L1920 200V340L0 180Z" fill="url(#musica-sombra)"/>
+          <path class="musica__corte-negro" d="M0 0H1920V200L0 40Z" fill="#000"/>
+          <path class="musica__corte-rayo" d="M260 61.7L520 83.3L1020 150Z" fill="#D00000"/>
+          <path class="musica__corte-rayo musica__corte-rayo--2" d="M1240 143.3L1360 153.3L1780 222Z" fill="#D00000"/>
+          <path class="musica__corte-rayo musica__corte-rayo--3" d="M640 93.3L760 103.3L1100 140Z" fill="#F6F2EE"/>
+        </svg>
+
+        <!-- Unión con Instagram: el mismo corte, invertido abajo -->
+        <svg class="musica__corte musica__corte--abajo" viewBox="0 0 1920 340" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="musica-sombra-abajo" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0" stop-color="#000" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#000" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path class="musica__corte-sombra" d="M0 320L1920 150V0L0 170Z" fill="url(#musica-sombra-abajo)"/>
+          <path class="musica__corte-negro" d="M0 320L1920 150V340H0Z" fill="#000"/>
+          <path class="musica__corte-rayo musica__corte-rayo--2" d="M1660 173L1400 196L900 222Z" fill="#D00000"/>
+          <path class="musica__corte-rayo" d="M680 259.8L560 270.4L140 296Z" fill="#D00000"/>
+          <path class="musica__corte-rayo musica__corte-rayo--3" d="M1280 206.7L1160 217.3L820 236Z" fill="#F6F2EE"/>
+        </svg>
+
+        <div class="musica__encabezado">
+          <p class="label musica__antetitulo">Discografía</p>
+          <h2 class="super-titulo">MÚSICA</h2>
+          <p class="musica__bajada">Dale play a los discos que marcaron a varias generaciones de fans.</p>
+        </div>
+
+        <!-- Ficha del disco del centro (cambia al girar el carrusel) -->
+        <div class="musica__info" aria-live="polite">
+          <div class="musica__info-cambio" data-info>
+            <p class="musica__numero"><b data-info-num>01</b> / 03</p>
+            <h3 class="musica__titulo" data-info-titulo>RIDE THE LIGHTNING</h3>
+            <dl class="musica__ficha">
+              <div><dt>Artista</dt><dd>Metallica</dd></div>
+              <div><dt>Año</dt><dd data-info-anio>1984</dd></div>
+              <div><dt>Canciones</dt><dd data-info-canciones>8</dd></div>
+              <div><dt>Suena</dt><dd data-info-tema>Ride the Lightning</dd></div>
+            </dl>
+          </div>
+          <div class="musica__acciones">
+            <button class="musica__play" type="button" data-musica-play aria-pressed="false">
+              <span class="musica__play-icono" aria-hidden="true">
+                <svg class="icono-play" viewBox="0 0 28 28"><path d="M9.33 6.42v15.16L22.17 14 9.33 6.42Z" fill="currentColor"/></svg>
+                <svg class="icono-pausa" viewBox="0 0 28 28"><path d="M8.17 5.83h4.08v16.34H8.17V5.83Zm7.58 0h4.08v16.34h-4.08V5.83Z" fill="currentColor"/></svg>
+              </span>
+              <span class="musica__play-texto" data-play-texto>Reproducir</span>
+            </button>
+            <p class="musica__estado"><span class="ecualizador" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Reproduciendo</p>
+          </div>
+        </div>
+
+        <div class="musica__escena" data-musica role="group" aria-roledescription="carrusel" aria-label="Discos: arrastra o usa las flechas para cambiar">
+          <div class="disco3d" data-titulo="RIDE THE LIGHTNING" data-anio="1984" data-canciones="8" data-tema="Ride the Lightning" data-audio="Assets/Metallica%20-%20Ride%20The%20Lightning(002)Ride%20The%20Lig.mp3">
+            <div class="disco3d__flota"><div class="disco3d__giro"><img src="img/musica-disco-ride.png" alt="Disco Ride the Lightning"></div><span class="disco3d__brillo"></span></div>
+          </div>
+          <div class="disco3d" data-titulo="MASTER OF PUPPETS" data-anio="1986" data-canciones="8" data-tema="Master of Puppets" data-audio="Assets/Trivium_-_Master_Of_Puppets_(mp3.pm).mp3">
+            <div class="disco3d__flota"><div class="disco3d__giro"><img src="img/musica-disco-master.png" alt="Disco Master of Puppets"></div><span class="disco3d__brillo"></span></div>
+          </div>
+          <div class="disco3d" data-titulo="RELOAD" data-anio="1997" data-canciones="13" data-tema="Fuel" data-audio="Assets/Metallica%20-%20Fuel.mp3">
+            <div class="disco3d__flota"><div class="disco3d__giro"><img src="img/musica-disco-reload.png" alt="Disco Reload"></div><span class="disco3d__brillo"></span></div>
+          </div>
+          <!-- Trazos a mano alrededor del disco del centro (el JS los dibuja) -->
+          <svg class="musica__trazos" viewBox="0 0 200 200" aria-hidden="true">
+            <path pathLength="1"/>
+            <path pathLength="1"/>
+          </svg>
+        </div>
+
+        <div class="musica__indicador">
+          <div class="musica__pasos">
+            <button type="button" class="musica__paso activo" data-ir="0" aria-label="Ver Ride the Lightning"></button>
+            <button type="button" class="musica__paso" data-ir="1" aria-label="Ver Master of Puppets"></button>
+            <button type="button" class="musica__paso" data-ir="2" aria-label="Ver Reload"></button>
+          </div>
+          <span class="musica__pista">Arrastra los discos</span>
+          <div class="musica__flechas">
+            <button class="flecha flecha--claro" type="button" data-musica-anterior aria-label="Disco anterior"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-anterior"/></svg></button>
+            <button class="flecha flecha--claro" type="button" data-musica-siguiente aria-label="Disco siguiente"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-siguiente"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- INSTAGRAM 777 -->
+    <section class="instagram" id="instagram" aria-label="Instagram">
+      <img class="instagram__fondo" src="img/ig-fondo.png" alt="">
+      <div class="contenedor">
+        <div class="encabezado">
+          <h2 class="super-titulo">INSTAGRAM</h2>
+          <a class="link link--claro" href="https://www.instagram.com/metallica/" target="_blank" rel="noopener"><span class="solo-escritorio">Síguenos @metallica</span><span class="solo-movil">Síguenos</span></a>
+        </div>
+        <div class="instagram__grilla">
+          <a class="card-ig" href="#" aria-label="Ver publicación 1 de 15 en Instagram"><img src="img/ig-01.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 2 de 15 en Instagram"><img src="img/ig-02.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 3 de 15 en Instagram"><img src="img/ig-03.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 4 de 15 en Instagram"><img src="img/ig-04.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 5 de 15 en Instagram"><img src="img/ig-05.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 6 de 15 en Instagram"><img src="img/ig-06.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 7 de 15 en Instagram"><img src="img/ig-07.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 8 de 15 en Instagram"><img src="img/ig-08.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 9 de 15 en Instagram"><img src="img/ig-09.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 10 de 15 en Instagram"><img src="img/ig-10.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 11 de 15 en Instagram"><img src="img/ig-11.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 12 de 15 en Instagram"><img src="img/ig-12.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 13 de 15 en Instagram"><img src="img/ig-13.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 14 de 15 en Instagram"><img src="img/ig-14.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+          <a class="card-ig" href="#" aria-label="Ver publicación 15 de 15 en Instagram"><img src="img/ig-15.png" alt=""><span class="card-ig__overlay"><img src="img/icono-instagram.svg" alt="" width="40" height="40"><span class="label">Ver publicación</span></span><img class="card-ig__badge" src="img/ig-badge.svg" alt="" width="20" height="20"></a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- TIENDA 777 -->
+    <picture><source media="(max-width: 899px)" srcset="img/sep-negro-crema-mobile.svg"><img class="separador" src="img/sep-negro-crema.svg" alt=""></picture>
+    <section class="tienda" id="tienda" aria-label="Tienda">
+      <div class="letras letras--merch" aria-hidden="true">
+        <span>M</span><span>E</span><span>R</span><span>C</span><span>H</span>
+      </div>
+      <div class="contenedor">
+        <div class="encabezado encabezado--junto">
+          <h2 class="super-titulo">TIENDA</h2>
+          <button class="link" data-abrir="tienda-panel">Comprar ahora</button>
+        </div>
+
+        <div class="carrusel carrusel--tienda" data-carrusel>
+          <div class="carrusel__ventana">
+            <div class="carrusel__fila" data-fila>
+              <button class="card-producto" data-vista-rapida="0">
+                <span class="card-producto__imagen">
+                  <img src="img/producto-1.png" alt="Vinilo 72 Seasons">
+                  <span class="card-producto__vista label">Vista rápida</span>
+                </span>
+                <span class="label">Vinilo 72 Seasons (2LP)</span>
+                <span class="card-producto__precio">$36,98 USD</span>
+              </button>
+              <button class="card-producto" data-vista-rapida="1">
+                <span class="card-producto__imagen">
+                  <img src="img/producto-2.png" alt="Vinilo Hardwired… To Self-Destruct">
+                  <span class="card-producto__vista label">Vista rápida</span>
+                </span>
+                <span class="label">Vinilo Hardwired… To Self-Destruct</span>
+                <span class="card-producto__precio">$39,98 USD</span>
+              </button>
+              <button class="card-producto" data-vista-rapida="2">
+                <span class="card-producto__imagen">
+                  <img src="img/producto-3.png" alt="Vinilo Ride the Lightning azul">
+                  <span class="card-producto__vista label">Vista rápida</span>
+                </span>
+                <span class="label">Vinilo Ride the Lightning (azul)</span>
+                <span class="card-producto__precio">$32,99 USD</span>
+              </button>
+              <button class="card-producto" data-vista-rapida="3">
+                <span class="card-producto__imagen">
+                  <img src="img/producto-4.png" alt="Vinilo …And Justice for All">
+                  <span class="card-producto__vista label">Vista rápida</span>
+                </span>
+                <span class="label">Vinilo …And Justice for All (2LP)</span>
+                <span class="card-producto__precio">$36,98 USD</span>
+              </button>
+              <button class="card-producto" data-vista-rapida="4">
+                <span class="card-producto__imagen">
+                  <img src="img/producto-5.png" alt="Vinilo Load">
+                  <span class="card-producto__vista label">Vista rápida</span>
+                </span>
+                <span class="label">Vinilo Load (2LP)</span>
+                <span class="card-producto__precio">$36,98 USD</span>
+              </button>
+              <button class="card-producto" data-vista-rapida="5">
+                <span class="card-producto__imagen">
+                  <img src="img/producto-6.png" alt="Guitarra ESP Snakebyte negra">
+                  <span class="card-producto__vista label">Vista rápida</span>
+                </span>
+                <span class="label">Guitarra ESP Snakebyte negra</span>
+                <span class="card-producto__precio">$1.399,00 USD</span>
+              </button>
+            </div>
+          </div>
+          <div class="carrusel__controles">
+            <div class="carrusel__progreso"><span class="carrusel__avance" data-avance></span></div>
+            <button class="flecha flecha--oscuro" data-anterior aria-label="Productos anteriores"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-anterior"/></svg></button>
+            <button class="flecha flecha--oscuro" data-siguiente aria-label="Productos siguientes"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-siguiente"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- MUSEO · PARALLAX 777 -->
+    <section class="museo" id="museo" aria-label="Museo">
+      <img class="museo__fondo" src="img/museo-fondo.png" alt="" data-parallax>
+      <div class="museo__velo"></div>
+      <picture><source media="(max-width: 899px)" srcset="img/museo-cortes-mobile.svg"><img class="museo__cortes" src="img/museo-cortes.svg" alt=""></picture>
+      <div class="museo__contenido">
+        <p class="label museo__antetitulo">The Metallica Black Box</p>
+        <h2 class="hero__titulo">MUSEO</h2>
+        <p class="museo__texto"><span class="solo-escritorio">Audio y video inéditos del estudio y la gira, arte y recuerdos, letras escritas a mano y nuevas cápsulas que cuentan cómo nació cada canción. Todo lo que quedó guardado ahora se puede explorar.</span><span class="solo-movil">Audio y video inéditos, arte, letras escritas a mano y cápsulas que cuentan cómo nació cada canción.</span></p>
+        <button class="boton boton--claro" data-abrir="museo-aviso">Explorar el museo</button>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- FAN CLUB 777 -->
+    <picture><source media="(max-width: 899px)" srcset="img/sep-crema-negro-mobile.svg"><img class="separador" src="img/sep-crema-negro.svg" alt=""></picture>
+    <section class="fan-club" id="fan-club" aria-label="Fan club">
+      <div class="letras letras--fan" aria-hidden="true">
+        <span>F</span><span>A</span><span>N</span>
+      </div>
+      <picture><source media="(max-width: 899px)" srcset="img/fan-franja-mobile.svg"><img class="fan-club__franja" src="img/fan-franja.svg" alt=""></picture>
+      <img class="fan-club__imagen" src="img/fan-club-rectangulos.png" alt="Fans de Metallica en concierto y logo Metal Member Metallica Club" width="739" height="562">
+      <div class="fan-club__contenido">
+        <div class="fan-club__logos">
+          <img class="logo-fanclub" src="img/logo-fanclub-blanco.png" alt="Metallica Fifth Member Club" width="96" height="98">
+          <span class="fan-club__divisor"></span>
+          <img class="logo-pongo" src="img/logo-pongo-blanco.png" alt="PONGO" width="130" height="74">
+        </div>
+        <h2 class="super-titulo">ÚNETE GRATIS AL FAN CLUB Y CONVIÉRTETE EN EL QUINTO MIEMBRO</h2>
+        <button class="boton boton--claro" data-abrir="registro">Regístrate hoy</button>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER 777 -->
+  <footer class="footer" id="footer">
+    <div class="contenedor">
+      <div class="footer__contenido">
+        <img class="footer__logo" src="img/footer-logo-metallica.png" alt="Metallica">
+        <div class="footer__sitios">
+          <a href="#"><img src="img/logo-fanclub-sitio.png" alt="Fifth Member Metallica Club" width="54.791" height="56"></a>
+          <a href="#"><img src="img/logo-awmh.svg" alt="All Within My Hands" width="123.59" height="56"></a>
+          <a href="#"><img src="img/logo-blackbox.svg" alt="Museo Black Box" width="67.2" height="56"></a>
+          <a href="#"><img src="img/logo-maximum.svg" alt="Maximum Metallica" width="126.323" height="56"></a>
+          <a href="#"><img src="img/logo-nugs.svg" alt="nugs.net" width="56" height="56"></a>
+        </div>
+      </div>
+      <hr class="footer__separador">
+      <div class="footer__legal">
+        <div class="footer__firma">
+          <img src="img/footer-pongo-blanco.png" alt="PONGO" width="113.778" height="64">
+          <p class="texto-pequeno"><span class="solo-escritorio">© 2026 Metallica · PONGO · Proyecto académico Laboratorio UX/UI 777 — UAO</span><span class="solo-movil">© 2026 Metallica · Proyecto académico Laboratorio UX/UI — UAO</span></p>
+        </div>
+        <nav class="footer__enlaces" aria-label="Enlaces legales">
+          <a class="link link--claro" href="#">Privacidad</a>
+          <a class="link link--claro" href="#">Términos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · MENÚ 777 -->
+  <!-- Aparece con Dissolve 0.4 s -->
+  <div class="overlay overlay--menu" id="menu" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+    <div class="menu">
+      <div class="menu__barra">
+        <button class="cerrar cerrar--oscuro" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+        <img class="menu__logo" src="img/menu-logo.png" alt="Metallica">
+        <div class="menu__iconos">
+          <button class="icono-btn icono-btn--oscuro" aria-label="Mi cuenta" data-cambiar="registro"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-usuario"/></svg></button>
+          <button class="icono-btn icono-btn--oscuro" aria-label="Carrito"><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-bolsa"/></svg></button>
+        </div>
+      </div>
+
+      <label class="menu__buscador">
+        <input type="search" placeholder="BUSCAR 'EM ALL" aria-label="Buscar">
+        <svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-buscar"/></svg>
+      </label>
+
+      <div class="menu__columnas">
+        <div class="menu__columna">
+          <div class="menu__grupo">
+            <a class="menu__titulo" href="#noticias">NOTICIAS</a>
+            <div class="menu__enlaces"><a class="link" href="#noticias">Noticias</a><span>/</span><a class="link" href="#">En la prensa</a><span>/</span><a class="link" href="#">…y algo más</a></div>
+          </div>
+          <div class="menu__grupo">
+            <a class="menu__titulo" href="#gira">TOUR</a>
+            <div class="menu__enlaces"><a class="link" href="#gira">Próximas fechas</a><span>/</span><a class="link" href="#">Fechas pasadas</a></div>
+          </div>
+          <div class="menu__grupo">
+            <a class="menu__titulo" href="#musica">MÚSICA</a>
+            <div class="menu__enlaces"><a class="link" href="#musica">Lanzamientos</a><span>/</span><a class="link" href="#">Canciones y letras</a><span>/</span><a class="link" href="#">Guitar Hero</a></div>
+          </div>
+          <div class="menu__grupo">
+            <a class="menu__titulo" href="#instagram">MEDIA</a>
+            <div class="menu__enlaces"><a class="link" href="#instagram">Videos</a><span>/</span><a class="link" href="#">Fotos</a><span>/</span><a class="link" href="#">Podcast</a><span>/</span><a class="link" href="#">Instagram</a></div>
+          </div>
+          <div class="menu__grupo">
+            <a class="menu__titulo" href="#tienda">TIENDA</a>
+            <div class="menu__enlaces"><a class="link" href="#tienda">Novedades</a><span>/</span><a class="link" href="#">Vinilos</a><span>/</span><a class="link" href="#">Ropa</a><span>/</span><a class="link" href="#">Accesorios</a><span>/</span><a class="link" href="#">Colecciones</a><span>/</span><a class="link" href="#">Bonos de regalo</a></div>
+          </div>
+          <div class="menu__grupo">
+            <a class="menu__titulo" href="#museo">MUSEO</a>
+            <div class="menu__enlaces"><a class="link" href="#museo">Entra a The Metallica Black Box</a></div>
+          </div>
+        </div>
+        <div class="menu__columna menu__columna--der">
+          <div class="menu__grupo">
+            <a class="menu__titulo" href="#fan-club">FAN CLUB</a>
+            <p class="menu__texto">QUINTO MIEMBRO · Crea una cuenta gratis o inicia sesión para ver contenido exclusivo.</p>
+            <div class="menu__enlaces"><a class="link" href="#fan-club">Noticias del club</a><span>/</span><a class="link" href="#">Preventa de boletas</a><span>/</span><a class="link" href="#">Museo</a><span>/</span><a class="link" href="#">Videos exclusivos</a><span>/</span><a class="link" href="#">Foros</a><span>/</span><a class="link" href="#">Concursos</a></div>
+          </div>
+          <div class="menu__grupo">
+            <a class="menu__titulo" href="#footer">BANDA</a>
+            <div class="menu__enlaces"><a class="link" href="#footer">Línea de tiempo</a><span>/</span><a class="link" href="#">Historia</a></div>
+          </div>
+          <div class="menu__grupo">
+            <p class="menu__titulo">CUENTA</p>
+            <div class="menu__enlaces"><button class="link" data-cambiar="registro">Iniciar sesión</button><span>/</span><button class="link" data-cambiar="registro">Registrarse</button><span>/</span><a class="link" href="#">Atención al cliente</a></div>
+          </div>
+          <div class="menu__redes">
+            <a href="#" aria-label="Instagram"><img src="img/red-instagram.svg" alt="" width="24" height="24"></a>
+            <a href="#" aria-label="YouTube"><img src="img/red-youtube.svg" alt="" width="24" height="24"></a>
+            <a href="#" aria-label="Facebook"><img src="img/red-facebook.svg" alt="" width="24" height="24"></a>
+            <a href="#" aria-label="TikTok"><img src="img/red-tiktok.svg" alt="" width="24" height="24"></a>
+            <a href="#" aria-label="X"><img src="img/red-x.svg" alt="" width="24" height="24"></a>
+            <a href="#" aria-label="Discord"><img src="img/red-discord.svg" alt="" width="24" height="24"></a>
+            <a href="#" aria-label="Podcast"><img src="img/red-podcast.svg" alt="" width="24" height="24"></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="menu__separador">
+
+      <div class="menu__sitios">
+        <a href="#"><img class="logo-invertido" src="img/logo-fanclub-sitio.png" alt="Fifth Member Metallica Club" width="62.619" height="64"></a>
+        <a href="#"><img src="img/menu-logo-awmh.svg" alt="All Within My Hands" width="141.246" height="64"></a>
+        <a href="#"><img src="img/menu-logo-blackbox.svg" alt="Museo Black Box" width="76.8" height="64"></a>
+        <a href="#"><img src="img/menu-logo-maximum.svg" alt="Maximum Metallica" width="144.369" height="64"></a>
+        <a href="#"><img src="img/menu-logo-nugs.svg" alt="nugs.net" width="64" height="64"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · NOTICIAS 777 -->
+  <div class="overlay" id="noticias-panel" role="dialog" aria-modal="true" aria-label="Todas las noticias" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--textura panel--noticias">
+      <div class="panel__barra">
+        <p class="label panel__ruta"><span>Noticias</span><span>Todas las noticias</span></p>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+
+      <div class="archivo__encabezado">
+        <p class="label panel__evento">Archivo Metallica · 2026</p>
+        <div class="archivo__fila-titulo">
+          <h2 class="hero__titulo">NOTICIAS</h2>
+          <p class="label archivo__gris">7 historias</p>
+        </div>
+        <hr class="archivo__linea">
+      </div>
+
+      <article class="archivo__destacada">
+        <div class="archivo__destacada-imagen">
+          <img src="img/hero.png" alt="Fan con la bandera de Colombia en un concierto de Metallica">
+          <span class="ficha__etiqueta texto-pequeno">Destacada</span>
+        </div>
+        <div class="archivo__destacada-info">
+          <p class="archivo__meta texto-pequeno"><span>4 de noviembre, 2026</span><span>·</span><span class="archivo__categoria">Gira</span></p>
+          <h3 class="super-titulo">EL M72 WORLD TOUR LLEGA A LATINOAMÉRICA EN 2027</h3>
+          <p class="archivo__texto-grande">Dos noches por ciudad, cero canciones repetidas y el escenario en 360° en medio del público. La banda confirma nuevas fechas en la región y la preventa abre primero para el Fan Club.</p>
+          <a class="boton boton--claro" href="#">Leer la nota</a>
+        </div>
+      </article>
+
+      <div class="archivo__recientes">
+        <div class="archivo__seccion"><p class="label">Más recientes</p><span></span></div>
+        <div class="archivo__grilla">
+          <article class="card-archivo">
+            <img src="img/ig-02.png" alt="Portada de Master of Puppets">
+            <p class="archivo__meta texto-pequeno"><span>28 de octubre, 2026</span><span>·</span><span class="archivo__categoria">Fundación</span></p>
+            <h3 class="subtitulo-2">ALL WITHIN MY HANDS Y LA CRUZ ROJA VUELVEN A UNIRSE</h3>
+            <p class="parrafo archivo__gris-claro">La jornada de donación de sangre acompañará los próximos conciertos. Cada donante recibe un afiche exclusivo de edición limitada.</p>
+            <a class="link link--claro" href="#" aria-label="Leer más: All Within My Hands y la Cruz Roja vuelven a unirse">Leer más</a>
+          </article>
+          <article class="card-archivo">
+            <img src="img/noticia-2.png" alt="Collage de portadas de Metallica">
+            <p class="archivo__meta texto-pequeno"><span>23 de octubre, 2026</span><span>·</span><span class="archivo__categoria">Arte</span></p>
+            <h3 class="subtitulo-2">EL ARTE DE METALLICA: CUATRO DÉCADAS DE PORTADAS Y AFICHES</h3>
+            <p class="parrafo archivo__gris-claro">Una exposición reúne portadas, afiches de gira y bocetos originales para contar la historia visual de la banda.</p>
+            <a class="link link--claro" href="#" aria-label="Leer más: El arte de Metallica: cuatro décadas de portadas y afiches">Leer más</a>
+          </article>
+          <article class="card-archivo">
+            <img src="img/noticia-1.png" alt="Afiche del concierto de 1999 en el Parque Simón Bolívar">
+            <p class="archivo__meta texto-pequeno"><span>2 de octubre, 2026</span><span>·</span><span class="archivo__categoria">Historia</span></p>
+            <h3 class="subtitulo-2">RECORDANDO EL CONCIERTO DE 1999 EN EL PARQUE SIMÓN BOLÍVAR</h3>
+            <p class="parrafo archivo__gris-claro">Fans que estuvieron esa noche en Bogotá cuentan cómo vivieron uno de los conciertos más recordados en Colombia.</p>
+            <a class="link link--claro" href="#" aria-label="Leer más: Recordando el concierto de 1999 en el parque Simón Bolívar">Leer más</a>
+          </article>
+          <article class="card-archivo">
+            <img src="img/hero-2.png" alt="Portada de 72 Seasons">
+            <p class="archivo__meta texto-pequeno"><span>24 de septiembre, 2026</span><span>·</span><span class="archivo__categoria">Gira</span></p>
+            <h3 class="subtitulo-2">LIFE BURNS FASTER: ASÍ SERÁ LA RESIDENCIA EN LAS VEGAS</h3>
+            <p class="parrafo archivo__gris-claro">Exhibiciones, encuentros con fans y actividades especiales acompañarán cada fecha de la residencia.</p>
+            <a class="link link--claro" href="#" aria-label="Leer más: Life Burns Faster: así será la residencia en Las Vegas">Leer más</a>
+          </article>
+          <article class="card-archivo">
+            <img src="img/ig-04.png" alt="Portada de Ride the Lightning">
+            <p class="archivo__meta texto-pequeno"><span>18 de septiembre, 2026</span><span>·</span><span class="archivo__categoria">Fan club</span></p>
+            <h3 class="subtitulo-2">EL FAN CLUB ABRE PREVENTA EXCLUSIVA PARA EL M72</h3>
+            <p class="parrafo archivo__gris-claro">Los miembros del Fan Club tendrán acceso anticipado a boletas antes de la venta general en Latinoamérica.</p>
+            <a class="link link--claro" href="#" aria-label="Leer más: El fan club abre preventa exclusiva para el M72">Leer más</a>
+          </article>
+          <article class="card-archivo">
+            <img src="img/noticia-3.png" alt="The Black Album">
+            <p class="archivo__meta texto-pequeno"><span>12 de agosto, 2026</span><span>·</span><span class="archivo__categoria">Discografía</span></p>
+            <h3 class="subtitulo-2">THE BLACK ALBUM CUMPLE 35 AÑOS</h3>
+            <p class="parrafo archivo__gris-claro">Repasamos cómo se grabó el disco que llevó a Metallica a una nueva generación de fans en todo el mundo.</p>
+            <a class="link link--claro" href="#" aria-label="Leer más: The Black Album cumple 35 años">Leer más</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="archivo__cargar"><button class="boton boton--claro">Cargar más noticias</button></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · TIENDA 777 -->
+  <div class="overlay" id="tienda-panel" role="dialog" aria-modal="true" aria-label="Tienda oficial" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--crema">
+      <div class="panel__barra">
+        <p class="label panel__ruta panel__ruta--gris">Tienda oficial</p>
+        <button class="cerrar cerrar--oscuro" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="tienda-panel__encabezado">
+        <h2 class="tienda-panel__titulo">TIENDA</h2>
+        <label class="buscador buscador--tienda">
+          <input type="search" placeholder="Buscar vinilos, ropa, accesorios…" aria-label="Buscar en la tienda">
+          <svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-buscar"/></svg>
+        </label>
+      </div>
+      <p class="label tienda-panel__promo"><span>ENVÍO GRATIS DESDE $80 USD</span><span>10 % OFF PARA QUINTOS MIEMBROS</span></p>
+      <div class="chips chips--oscuros">
+        <button class="chip activo">Todo</button><button class="chip">Vinilos</button><button class="chip">Ropa</button><button class="chip">Instrumentos</button><button class="chip">Accesorios</button><button class="chip">Coleccionables</button>
+      </div>
+      <div class="tienda-panel__resumen">
+        <p class="parrafo">6 productos</p>
+        <p class="label panel__ruta--gris">Ordenar: destacados ⇅</p>
+      </div>
+      <div class="tienda-panel__productos">
+        <button class="card-producto card-producto--chica" data-vista-rapida="0"><span class="card-producto__imagen"><img src="img/producto-1.png" alt="Vinilo 72 Seasons"><span class="card-producto__vista label">Vista rápida</span></span><span class="label">Vinilo 72 Seasons (2LP)</span><span class="card-producto__precio">$36,98 USD</span></button>
+        <button class="card-producto card-producto--chica" data-vista-rapida="1"><span class="card-producto__imagen"><img src="img/producto-2.png" alt="Vinilo Hardwired… To Self-Destruct"><span class="card-producto__vista label">Vista rápida</span></span><span class="label">Vinilo Hardwired… To Self-Destruct</span><span class="card-producto__precio">$39,98 USD</span></button>
+        <button class="card-producto card-producto--chica" data-vista-rapida="2"><span class="card-producto__imagen"><img src="img/producto-3.png" alt="Vinilo Ride the Lightning azul"><span class="card-producto__vista label">Vista rápida</span></span><span class="label">Vinilo Ride the Lightning (azul)</span><span class="card-producto__precio">$32,99 USD</span></button>
+        <button class="card-producto card-producto--chica" data-vista-rapida="3"><span class="card-producto__imagen"><img src="img/producto-4.png" alt="Vinilo …And Justice for All"><span class="card-producto__vista label">Vista rápida</span></span><span class="label">Vinilo …And Justice for All (2LP)</span><span class="card-producto__precio">$36,98 USD</span></button>
+        <button class="card-producto card-producto--chica" data-vista-rapida="4"><span class="card-producto__imagen"><img src="img/producto-5.png" alt="Vinilo Load"><span class="card-producto__vista label">Vista rápida</span></span><span class="label">Vinilo Load (2LP)</span><span class="card-producto__precio">$36,98 USD</span></button>
+        <button class="card-producto card-producto--chica" data-vista-rapida="5"><span class="card-producto__imagen"><img src="img/producto-6.png" alt="Guitarra ESP Snakebyte negra"><span class="card-producto__vista label">Vista rápida</span></span><span class="label">Guitarra ESP Snakebyte negra</span><span class="card-producto__precio">$1.399,00 USD</span></button>
+      </div>
+      <a class="boton boton--oscuro" href="#tienda">Ver toda la tienda</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · VINILOS 777 -->
+  <div class="overlay" id="vinilos" role="dialog" aria-modal="true" aria-label="Vinilos" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--textura panel--compacto">
+      <div class="panel__barra">
+        <p class="label panel__ruta"><span>Tienda</span><span>Vinilos</span></p>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="gh-encabezado">
+        <h2 class="tienda-panel__titulo">VINILOS</h2>
+        <p class="label panel__evento">Reediciones oficiales en 180 g · envío a toda Latinoamérica</p>
+      </div>
+      <div class="vinilos">
+        <div class="vinilos__destacado">
+          <div class="vinilos__portada">
+            <img src="img/producto-1.png" alt="Vinilo 72 Seasons">
+            <span class="ficha__etiqueta texto-pequeno">NUEVO</span>
+          </div>
+          <p class="titulo">72 SEASONS</p>
+          <p class="parrafo vinilos__meta">2023 · Vinilo doble 180 g · portada gatefold</p>
+          <div class="vinilos__compra">
+            <p class="titulo">$36,98 USD</p>
+            <button class="boton boton--rojo" data-vista-rapida="0">Ver detalle</button>
+          </div>
+        </div>
+        <div class="vinilos__lista">
+          <div class="vinilo-fila">
+            <span class="vinilo-fila__portada"><img src="img/producto-2.png" alt=""></span>
+            <span class="vinilo-fila__info"><span class="subtitulo-2">Hardwired… To Self-Destruct</span><span class="texto-pequeno vinilo-fila__meta">2016 · Vinilo doble 180 g</span></span>
+            <span class="subtitulo-2">$39,98 USD</span>
+            <button class="boton boton--claro" data-vista-rapida="1" aria-label="Ver Hardwired… To Self-Destruct">Ver</button>
+          </div>
+          <div class="vinilo-fila">
+            <span class="vinilo-fila__portada"><img src="img/producto-3.png" alt=""></span>
+            <span class="vinilo-fila__info"><span class="texto-pequeno vinilo-fila__limitado">LIMITADO</span><span class="subtitulo-2">Ride the Lightning</span><span class="texto-pequeno vinilo-fila__meta">1984 · Vinilo azul · edición limitada</span></span>
+            <span class="subtitulo-2">$32,99 USD</span>
+            <button class="boton boton--claro" data-vista-rapida="2" aria-label="Ver Ride the Lightning">Ver</button>
+          </div>
+          <div class="vinilo-fila">
+            <span class="vinilo-fila__portada"><img src="img/producto-4.png" alt=""></span>
+            <span class="vinilo-fila__info"><span class="subtitulo-2">…And Justice for All</span><span class="texto-pequeno vinilo-fila__meta">1988 · Vinilo doble 180 g</span></span>
+            <span class="subtitulo-2">$36,98 USD</span>
+            <button class="boton boton--claro" data-vista-rapida="3" aria-label="Ver …And Justice for All">Ver</button>
+          </div>
+          <div class="vinilo-fila">
+            <span class="vinilo-fila__portada"><img src="img/producto-5.png" alt=""></span>
+            <span class="vinilo-fila__info"><span class="subtitulo-2">Load</span><span class="texto-pequeno vinilo-fila__meta">1996 · Vinilo doble 180 g</span></span>
+            <span class="subtitulo-2">$36,98 USD</span>
+            <button class="boton boton--claro" data-vista-rapida="4" aria-label="Ver Load">Ver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · 72 SEASONS 777 -->
+  <div class="overlay" id="album-72" role="dialog" aria-modal="true" aria-label="72 Seasons" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--textura panel--compacto">
+      <div class="panel__barra">
+        <p class="label panel__ruta"><span>Música</span><span>72 Seasons</span></p>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="album">
+        <img class="album__portada" src="img/hero-2.png" alt="Portada de 72 Seasons" width="460" height="460">
+        <div class="album__info">
+          <p class="label album__amarillo">NUEVO ÁLBUM</p>
+          <h2 class="tienda-panel__titulo">72 SEASONS</h2>
+          <p class="parrafo album__meta">Undécimo álbum de estudio · 14 de abril de 2023 · 12 canciones · 77 min</p>
+          <div class="ficha__grupo">
+            <p class="label ficha__etiqueta-grupo">Escúchalo en</p>
+            <div class="album__plataformas">
+              <a class="plataforma label" href="#"><img src="img/icono-play.svg" alt="" width="16" height="16">Spotify</a>
+              <a class="plataforma label" href="#"><img src="img/icono-play.svg" alt="" width="16" height="16">Apple Music</a>
+              <a class="plataforma label" href="#"><img src="img/icono-play.svg" alt="" width="16" height="16">YouTube Music</a>
+              <a class="plataforma label" href="#"><img src="img/icono-play.svg" alt="" width="16" height="16">Amazon Music</a>
+              <a class="plataforma label" href="#"><img src="img/icono-play.svg" alt="" width="16" height="16">Deezer</a>
+            </div>
+          </div>
+          <div class="ficha__grupo">
+            <p class="label ficha__etiqueta-grupo">Lista de canciones</p>
+            <div class="album__canciones">
+              <ol class="album__col">
+                <li><span class="label">01</span><span class="parrafo">72 Seasons</span><span class="label">7:39</span></li>
+                <li><span class="label">02</span><span class="parrafo">Shadows Follow</span><span class="label">6:12</span></li>
+                <li><span class="label">03</span><span class="parrafo">Screaming Suicide</span><span class="label">5:30</span></li>
+                <li><span class="label">04</span><span class="parrafo">Sleepwalk My Life Away</span><span class="label">6:56</span></li>
+                <li><span class="label">05</span><span class="parrafo">You Must Burn!</span><span class="label">7:03</span></li>
+                <li><span class="label">06</span><span class="parrafo">Lux Æterna</span><span class="label">3:26</span></li>
+              </ol>
+              <ol class="album__col">
+                <li><span class="label">07</span><span class="parrafo">Crown of Barbed Wire</span><span class="label">5:49</span></li>
+                <li><span class="label">08</span><span class="parrafo">Chasing Light</span><span class="label">6:45</span></li>
+                <li><span class="label">09</span><span class="parrafo">If Darkness Had a Son</span><span class="label">6:36</span></li>
+                <li><span class="label">10</span><span class="parrafo">Too Far Gone?</span><span class="label">4:34</span></li>
+                <li><span class="label">11</span><span class="parrafo">Room of Mirrors</span><span class="label">5:34</span></li>
+                <li><span class="label">12</span><span class="parrafo">Inamorata</span><span class="label">11:10</span></li>
+              </ol>
+            </div>
+          </div>
+          <div class="ficha__compra">
+            <button class="boton boton--rojo" data-vista-rapida="0">Comprar el vinilo</button>
+            <button class="boton boton--claro" data-cambiar="tienda-panel">Ir a la tienda</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · BOLETAS 777 -->
+  <div class="overlay" id="boletas" role="dialog" aria-modal="true" aria-label="Comprar boletas" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel">
+      <div class="panel__barra">
+        <h2 class="super-titulo">COMPRAR BOLETAS</h2>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <p class="label panel__evento">M72 World Tour · Bogotá, Colombia · 6 de marzo, 2027 · Estadio El Campín</p>
+      <div class="boletas">
+        <div class="boletas__izq">
+          <div class="boletas__opciones">
+            <button class="opcion-boleta"><img src="img/icono-ofertas.svg" alt="" width="28" height="28"><span class="label">Ofertas</span></button>
+            <button class="opcion-boleta"><img src="img/icono-vip.svg" alt="" width="28" height="28"><span class="label">Paquetes VIP</span></button>
+          </div>
+          <img class="boletas__mapa" src="img/mapa-estadio.svg" alt="Mapa del Estadio El Campín" width="560" height="360">
+          <p class="parrafo boletas__nota">Todo incluido: los precios ya traen los cargos de servicio (antes de impuestos).</p>
+        </div>
+        <div class="boletas__der">
+          <div class="boletas__lista">
+            <div class="boletas__encabezado">
+              <p class="subtitulo-2">5 resultados</p>
+              <p class="label boletas__orden">Ordenar: destacados ⇅</p>
+            </div>
+            <button class="fila-boleta"><img src="img/boleta-mapa.svg" alt="" width="39.481" height="31.021"><span class="fila-boleta__info"><span class="fila-boleta__sec">Sec 152 · Fila 6</span><span class="fila-boleta__tipo">Platino oficial</span></span><span class="fila-boleta__precio">$1.250.000 COP</span></button>
+            <button class="fila-boleta"><img src="img/boleta-mapa.svg" alt="" width="39.481" height="31.021"><span class="fila-boleta__info"><span class="fila-boleta__sec">Sec 102 · Fila 5</span><span class="fila-boleta__tipo">Platino oficial</span></span><span class="fila-boleta__precio">$1.380.000 COP</span></button>
+            <button class="fila-boleta"><img src="img/boleta-mapa.svg" alt="" width="39.481" height="31.021"><span class="fila-boleta__info"><span class="fila-boleta__sec">Sec 116 · Fila 7</span><span class="fila-boleta__tipo">Platino oficial</span></span><span class="fila-boleta__precio">$1.380.000 COP</span></button>
+            <div class="boletas__cuotas label"><span>Paga en 4 cuotas sin interés</span><a href="#">Ver más</a></div>
+            <button class="fila-boleta"><img src="img/boleta-mapa.svg" alt="" width="39.481" height="31.021"><span class="fila-boleta__info"><span class="fila-boleta__sec">Sec 110 · Fila 12</span><span class="fila-boleta__tipo">★ Paquete de viaje: 2 noches de hotel + asiento reservado</span></span><span class="fila-boleta__precio">$2.850.000 COP</span></button>
+            <button class="fila-boleta"><img src="img/boleta-mapa.svg" alt="" width="39.481" height="31.021"><span class="fila-boleta__info"><span class="fila-boleta__sec">Campo · General</span><span class="fila-boleta__tipo">Entrada general de pie</span></span><span class="fila-boleta__precio">$420.000 COP</span></button>
+          </div>
+          <a class="boton boton--rojo boton--ancho" href="#">Continuar al pago</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · FECHAS 777 -->
+  <div class="overlay" id="fechas" role="dialog" aria-modal="true" aria-label="Fechas M72 World Tour" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--fechas">
+      <div class="panel__barra">
+        <h2 class="super-titulo">FECHAS · M72 WORLD TOUR</h2>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="fechas__banner">
+        <img class="fechas__banner-fondo" src="img/fechas-banner.png" alt="">
+        <div class="fechas__banner-texto">
+          <p class="subtitulo fechas__banner-titulo">GRABACIONES OFICIALES EN VIVO</p>
+          <p class="parrafo">Escucha y descarga más de 600 shows de los 40+ años de carrera de Metallica.</p>
+        </div>
+        <a class="boton boton--claro" href="#">Escuchar ahora</a>
+      </div>
+      <div class="fechas__grilla">
+        <article class="card-gira"><div class="card-gira__info"><p class="subtitulo">29 DE OCTUBRE, 2026</p><h3 class="titulo card-gira__ciudad">LAS VEGAS, NEVADA, ESTADOS UNIDOS</h3><p class="label card-gira__lugar">Sphere</p></div><div class="card-gira__acciones"><a class="link link--claro" href="#" aria-label="Detalles del evento: Las Vegas, 29 de octubre de 2026">Detalles del evento</a><p class="label card-gira__agotadas">Boletas agotadas</p><a class="link link--claro" href="#" aria-label="Más info: Las Vegas, 29 de octubre de 2026">Más info</a></div></article>
+        <article class="card-gira"><div class="card-gira__info"><p class="subtitulo">31 DE OCTUBRE, 2026</p><h3 class="titulo card-gira__ciudad">LAS VEGAS, NEVADA, ESTADOS UNIDOS</h3><p class="label card-gira__lugar">Sphere</p></div><div class="card-gira__acciones"><a class="link link--claro" href="#" aria-label="Detalles del evento: Las Vegas, 31 de octubre de 2026">Detalles del evento</a><p class="label card-gira__agotadas">Boletas agotadas</p><a class="link link--claro" href="#" aria-label="Más info: Las Vegas, 31 de octubre de 2026">Más info</a></div></article>
+        <article class="card-gira"><div class="card-gira__info"><p class="subtitulo">19 DE NOVIEMBRE, 2026</p><h3 class="titulo card-gira__ciudad">UNCASVILLE, CONNECTICUT, ESTADOS UNIDOS</h3><p class="label card-gira__lugar">Mohegan Sun Arena</p></div><div class="card-gira__acciones"><a class="link link--claro" href="#" aria-label="Detalles del evento: Uncasville, 19 de noviembre de 2026">Detalles del evento</a><p class="label card-gira__agotadas">Boletas agotadas</p><a class="link link--claro" href="#" aria-label="Más info: Uncasville, 19 de noviembre de 2026">Más info</a></div></article>
+        <article class="card-gira"><div class="card-gira__info"><p class="subtitulo">21 DE NOVIEMBRE, 2026</p><h3 class="titulo card-gira__ciudad">UNCASVILLE, CONNECTICUT, ESTADOS UNIDOS</h3><p class="label card-gira__lugar">Mohegan Sun Arena</p></div><div class="card-gira__acciones"><a class="link link--claro" href="#" aria-label="Detalles del evento: Uncasville, 21 de noviembre de 2026">Detalles del evento</a><p class="label card-gira__agotadas">Boletas agotadas</p><a class="link link--claro" href="#" aria-label="Más info: Uncasville, 21 de noviembre de 2026">Más info</a></div></article>
+        <article class="card-gira"><div class="card-gira__info"><p class="subtitulo">6 DE MARZO, 2027</p><h3 class="titulo card-gira__ciudad">BOGOTÁ, COLOMBIA</h3><p class="label card-gira__lugar">Estadio El Campín</p></div><div class="card-gira__acciones"><a class="link link--claro" href="#" aria-label="Detalles del evento: Bogotá, 6 de marzo de 2027">Detalles del evento</a><button class="label card-gira__comprar" data-cambiar="boletas" aria-label="Comprar boletas: Bogotá, 6 de marzo de 2027">Comprar boletas</button><a class="link link--claro" href="#" aria-label="Más info: Bogotá, 6 de marzo de 2027">Más info</a></div></article>
+        <article class="card-gira"><div class="card-gira__info"><p class="subtitulo">13 DE MARZO, 2027</p><h3 class="titulo card-gira__ciudad">CIUDAD DE MÉXICO, MÉXICO</h3><p class="label card-gira__lugar">Estadio GNP Seguros</p></div><div class="card-gira__acciones"><a class="link link--claro" href="#" aria-label="Detalles del evento: Ciudad de México, 13 de marzo de 2027">Detalles del evento</a><button class="label card-gira__comprar" data-cambiar="boletas" aria-label="Comprar boletas: Ciudad de México, 13 de marzo de 2027">Comprar boletas</button><a class="link link--claro" href="#" aria-label="Más info: Ciudad de México, 13 de marzo de 2027">Más info</a></div></article>
+        <article class="card-gira"><div class="card-gira__info"><p class="subtitulo">20 DE MARZO, 2027</p><h3 class="titulo card-gira__ciudad">SANTIAGO, CHILE</h3><p class="label card-gira__lugar">Estadio Nacional</p></div><div class="card-gira__acciones"><a class="link link--claro" href="#" aria-label="Detalles del evento: Santiago, 20 de marzo de 2027">Detalles del evento</a><button class="label card-gira__comprar" data-cambiar="boletas" aria-label="Comprar boletas: Santiago, 20 de marzo de 2027">Comprar boletas</button><a class="link link--claro" href="#" aria-label="Más info: Santiago, 20 de marzo de 2027">Más info</a></div></article>
+        <article class="card-gira"><div class="card-gira__info"><p class="subtitulo">27 DE MARZO, 2027</p><h3 class="titulo card-gira__ciudad">SÃO PAULO, BRASIL</h3><p class="label card-gira__lugar">Allianz Parque</p></div><div class="card-gira__acciones"><a class="link link--claro" href="#" aria-label="Detalles del evento: São Paulo, 27 de marzo de 2027">Detalles del evento</a><button class="label card-gira__comprar" data-cambiar="boletas" aria-label="Comprar boletas: São Paulo, 27 de marzo de 2027">Comprar boletas</button><a class="link link--claro" href="#" aria-label="Más info: São Paulo, 27 de marzo de 2027">Más info</a></div></article>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · VISTA RÁPIDA 777 -->
+  <!-- Se llena con script.js según la tarjeta -->
+  <div class="overlay" id="vista-rapida" role="dialog" aria-modal="true" aria-label="Vista rápida" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--textura">
+      <div class="panel__barra">
+        <p class="label panel__ruta" data-vr="ruta"><span>Tienda</span><span>Vinilos</span></p>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="ficha">
+        <div class="ficha__imagen">
+          <img class="ficha__foto" data-vr="foto" src="img/producto-1.png" alt="">
+          <span class="ficha__etiqueta texto-pequeno" data-vr="etiqueta">NUEVO</span>
+        </div>
+        <div class="ficha__info">
+          <span class="ficha__categoria texto-pequeno" data-vr="categoria">VINILO · 2LP</span>
+          <h2 class="ficha__titulo" data-vr="titulo">72 SEASONS</h2>
+          <p class="label ficha__subtitulo" data-vr="subtitulo">Vinilo doble · 2023</p>
+          <p class="ficha__descripcion" data-vr="descripcion"></p>
+          <p class="ficha__precio" data-vr="precio">$36,98 USD</p>
+          <div class="ficha__grupo">
+            <p class="label ficha__etiqueta-grupo">Edición</p>
+            <div class="chips" data-vr="chips"></div>
+          </div>
+          <div class="ficha__compra">
+            <div class="cantidad">
+              <button class="cantidad__btn" data-cantidad="-1" aria-label="Quitar uno">−</button>
+              <span class="cantidad__numero" data-cantidad-valor>1</span>
+              <button class="cantidad__btn" data-cantidad="1" aria-label="Agregar uno">+</button>
+            </div>
+            <a class="boton boton--rojo" href="#">Agregar al carrito</a>
+            <a class="boton boton--claro" href="#tienda">Ver en la tienda</a>
+          </div>
+          <p class="parrafo ficha__disponible">Disponible · envío en 3 a 5 días hábiles</p>
+          <hr class="ficha__separador">
+          <div class="ficha__detalles">
+            <p class="label">Detalles</p>
+            <ul class="lista-guiones" data-vr="detalles"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · DÓNDE JUGAR GUITAR HERO 777 -->
+  <div class="overlay" id="gh-donde" role="dialog" aria-modal="true" aria-label="Dónde jugar Guitar Hero" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--textura">
+      <div class="panel__barra">
+        <p class="label panel__ruta"><span>Guitar Hero: Metallica</span><span>Dónde jugarlo</span></p>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="ficha">
+        <div class="ficha__imagen">
+          <img class="ficha__foto ficha__foto--grande" src="img/gh-xbox.png" alt="Consola de referencia">
+          <span class="ficha__etiqueta texto-pequeno">SOLO EN DISCO</span>
+        </div>
+        <div class="ficha__info">
+          <span class="ficha__categoria texto-pequeno">VIDEOJUEGO · 2009</span>
+          <h2 class="ficha__titulo ficha__titulo--italica">GUITAR HERO: METALLICA</h2>
+          <p class="label ficha__subtitulo">Neversoft · Activision</p>
+          <p class="ficha__descripcion">Toca las 28 canciones de Metallica con guitarra, bajo, batería y voz. Hoy se consigue usado en tiendas retro, GameStop, eBay y MercadoLibre.</p>
+          <div class="ficha__precio-fila">
+            <p class="ficha__precio">Desde ≈ $14 USD</p>
+            <p class="label ficha__referencia">precio de referencia, usado</p>
+          </div>
+          <div class="ficha__grupo">
+            <p class="label ficha__etiqueta-grupo">Consola</p>
+            <div class="chips">
+              <button class="chip activo">Xbox Series x</button><button class="chip">PlayStation 5</button><button class="chip">XBox One</button><button class="chip">PC</button>
+            </div>
+          </div>
+          <div class="ficha__grupo">
+            <p class="label ficha__etiqueta-grupo">Estado</p>
+            <div class="chips">
+              <button class="chip activo">Solo el disco · ≈ $14</button><button class="chip">Completo en caja · ≈ $18</button><button class="chip">Nuevo sellado · ≈ $29</button>
+            </div>
+          </div>
+          <div class="ficha__compra">
+            <a class="boton boton--rojo" href="#">Buscar dónde comprar</a>
+            <button class="boton boton--claro" data-cambiar="gh-setlist">Ver setlist</button>
+          </div>
+          <hr class="ficha__separador">
+          <div class="ficha__detalles">
+            <p class="label">Detalles</p>
+            <ul class="lista-guiones lista-guiones--amplia">
+              <li>Compatible con la guitarra y la batería de Guitar Hero World Tour</li>
+              <li>Hasta 4 jugadores en modo banda</li>
+              <li>Salió para Xbox 360, PS3, Wii y PS2 (la foto es de referencia)</li>
+              <li>Precios: PriceCharting, noviembre de 2026; varían según tienda y estado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · SETLIST GUITAR HERO 777 -->
+  <div class="overlay" id="gh-setlist" role="dialog" aria-modal="true" aria-label="Setlist Guitar Hero" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--textura">
+      <div class="panel__barra">
+        <p class="label panel__ruta"><span>Guitar Hero: Metallica</span><span>Setlist</span></p>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="gh-encabezado">
+        <div class="gh-encabezado__identidad">
+          <img src="img/gh-logo.png" alt="Guitar Hero Metallica" width="96" height="68">
+          <h2 class="gh-encabezado__titulo">SETLIST</h2>
+        </div>
+        <p class="label panel__evento">28 canciones de Metallica · 49 en total</p>
+      </div>
+      <div class="setlist">
+        <div class="setlist__col">
+          <div class="setlist__escenario"><p class="texto-pequeno">THE FORUM</p><ol><li value="1">For Whom the Bell Tolls</li><li>The Unforgiven</li></ol></div>
+          <div class="setlist__escenario"><p class="texto-pequeno">METALLICA AT TUSHINO</p><ol start="3"><li>Enter Sandman</li><li>King Nothing</li><li>No Leaf Clover</li><li>Nothing Else Matters</li><li>Sad but True</li></ol></div>
+        </div>
+        <div class="setlist__col">
+          <div class="setlist__escenario"><p class="texto-pequeno">HAMMERSMITH APOLLO</p><ol start="8"><li>Fade to Black</li><li>The Memory Remains</li><li>Orion</li><li>Welcome Home (Sanitarium)</li><li>Wherever I May Roam</li></ol></div>
+          <div class="setlist__escenario"><p class="texto-pequeno">DAMAGED JUSTICE TOUR</p><ol start="13"><li>All Nightmare Long</li><li>Frantic</li><li>Fuel</li><li>Hit the Lights</li><li>One</li></ol></div>
+        </div>
+        <div class="setlist__col">
+          <div class="setlist__escenario"><p class="texto-pequeno">THE MEADOWLANDS</p><ol start="18"><li>Battery</li><li>Creeping Death</li><li>Master of Puppets</li><li>Mercyful Fate</li><li>Seek &amp; Destroy</li></ol></div>
+        </div>
+        <div class="setlist__col">
+          <div class="setlist__escenario"><p class="texto-pequeno">DONINGTON PARK</p><ol start="23"><li>Disposable Heroes</li><li>Dyers Eve</li><li>Fight Fire with Fire</li><li>The Shortest Straw</li><li>Whiplash</li></ol></div>
+          <div class="setlist__escenario"><p class="texto-pequeno">THE ICE CAVE</p><ol start="28"><li>The Thing That Should Not Be</li></ol></div>
+        </div>
+      </div>
+      <p class="parrafo setlist__nota">+ 21 canciones de bandas que inspiraron a Metallica, como Motörhead, Diamond Head, Mercyful Fate y Queen.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · SOBRE GUITAR HERO 777 -->
+  <div class="overlay" id="gh-sobre" role="dialog" aria-modal="true" aria-label="Sobre Guitar Hero" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--textura">
+      <div class="panel__barra">
+        <p class="label panel__ruta"><span>Guitar Hero: Metallica</span><span>Sobre el juego</span></p>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="gh-encabezado">
+        <div class="gh-encabezado__identidad">
+          <img src="img/gh-logo.png" alt="Guitar Hero Metallica" width="96" height="68">
+          <h2 class="gh-encabezado__titulo">SOBRE EL JUEGO</h2>
+        </div>
+        <p class="label panel__evento">Lanzado el 29 de marzo de 2009</p>
+      </div>
+      <div class="sobre">
+        <img class="sobre__imagen" src="img/gh-sobre.png" alt="James Hetfield y Robert Trujillo en Guitar Hero: Metallica" width="720" height="405">
+        <div class="sobre__info">
+          <dl class="sobre__ficha">
+            <div><dt class="label">Lanzamiento</dt><dd>29 de marzo de 2009 · PS2: 14 de abril de 2009</dd></div>
+            <div><dt class="label">Desarrollo</dt><dd>Neversoft</dd></div>
+            <div><dt class="label">Distribución</dt><dd>Activision</dd></div>
+            <div><dt class="label">Consolas</dt><dd>Xbox 360, PlayStation 3, Wii y PlayStation 2</dd></div>
+            <div><dt class="label">Canciones</dt><dd>49 en total · 28 de Metallica</dd></div>
+          </dl>
+          <div class="sobre__destacado">
+            <p class="label">Lo destacado</p>
+            <ul class="lista-guiones lista-guiones--grande">
+              <li>La banda grabó captura de movimiento para sus avatares</li>
+              <li>Modo Experto+ en batería con doble pedal</li>
+              <li>Metallifacts: datos curiosos en pantalla mientras tocas</li>
+              <li>Lemmy (Motörhead) y King Diamond (Mercyful Fate) como personajes desbloqueables</li>
+              <li>Videos detrás de cámaras y modo Drum Over</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · REGISTRO FAN CLUB 777 -->
+  <div class="overlay" id="registro" role="dialog" aria-modal="true" aria-label="Registro Fan Club" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel">
+      <div class="panel__barra">
+        <p class="label panel__ruta"><span>Fan club</span><span>Registro</span></p>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="registro">
+        <div class="registro__beneficios">
+          <div class="fan-club__logos fan-club__logos--chico">
+            <img class="logo-fanclub" src="img/logo-fanclub-blanco.png" alt="Metallica Fifth Member Club" width="84" height="86">
+            <span class="fan-club__divisor"></span>
+            <img class="logo-pongo" src="img/logo-pongo-blanco.png" alt="PONGO" width="110" height="62">
+          </div>
+          <h2 class="registro__titulo">CONVIÉRTETE EN EL QUINTO MIEMBRO</h2>
+          <p class="label registro__gratis">Gratis, para siempre.</p>
+          <ul class="registro__lista">
+            <li>Preventa de boletas para la gira M72</li>
+            <li>Videos y fotos exclusivas</li>
+            <li>Acceso al museo The Metallica Black Box</li>
+            <li>Mercancía solo para miembros</li>
+            <li>Concursos y descargas gratis</li>
+          </ul>
+        </div>
+        <form class="formulario" data-formulario>
+          <h2 class="super-titulo">CREA TU CUENTA</h2>
+          <p class="parrafo formulario__sesion">¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+          <div class="formulario__redes">
+            <button type="button" class="red-btn"><span class="red-btn__icono">G</span><span class="label">Continuar con Google</span></button>
+            <button type="button" class="red-btn"><span class="red-btn__icono">f</span><span class="label">Continuar con Facebook</span></button>
+            <button type="button" class="red-btn"><span class="red-btn__icono">A</span><span class="label">Continuar con Apple</span></button>
+          </div>
+          <div class="formulario__separador"><span class="texto-pequeno">o con tu correo</span></div>
+          <div class="formulario__fila">
+            <label class="campo"><span class="label">Nombre</span><input type="text" name="nombre" placeholder="Tu nombre" autocomplete="given-name"></label>
+            <label class="campo"><span class="label">Apellido</span><input type="text" name="apellido" placeholder="Tu apellido" autocomplete="family-name"></label>
+          </div>
+          <label class="campo"><span class="label">Correo electrónico</span><input type="email" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email"></label>
+          <div class="formulario__fila">
+            <label class="campo"><span class="label">Contraseña</span><span class="campo__caja"><input type="password" name="clave" placeholder="••••••••" autocomplete="new-password"><button type="button" class="texto-pequeno campo__mostrar" data-mostrar>Mostrar</button></span></label>
+            <label class="campo"><span class="label">Confirmar contraseña</span><span class="campo__caja"><input type="password" name="clave2" placeholder="••••••••" autocomplete="new-password"><button type="button" class="texto-pequeno campo__mostrar" data-mostrar>Mostrar</button></span></label>
+          </div>
+          <label class="casilla"><input type="checkbox" checked><span class="casilla__caja"></span><span class="parrafo">Acepto los términos y la política de privacidad, y quiero recibir noticias del fan club.</span></label>
+          <button type="submit" class="boton boton--rojo boton--ancho">Crear mi cuenta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- DESPLEGABLE · MUSEO EN MANTENIMIENTO 777 -->
+  <!-- Sube desde abajo -->
+  <div class="overlay overlay--abajo" id="museo-aviso" role="dialog" aria-modal="true" aria-label="Museo en mantenimiento" hidden>
+    <button class="overlay__fondo" data-cerrar aria-label="Cerrar"></button>
+    <div class="panel panel--textura panel--abajo">
+      <div class="panel__barra">
+        <p class="label panel__ruta"><span>Museo</span><span>Aviso</span></p>
+        <span class="panel__tirador"></span>
+        <button class="cerrar" data-cerrar><svg class="glifo" width="24" height="24" aria-hidden="true"><use href="#icono-cerrar"/></svg><span class="label">Cerrar</span></button>
+      </div>
+      <div class="aviso">
+        <img src="img/museo-logo-blackbox.svg" alt="The Metallica Black Box" width="86.4" height="72">
+        <span class="aviso__estado texto-pequeno"><img src="img/museo-punto.svg" alt="" width="8" height="8">Inactivo temporalmente</span>
+        <h2 class="aviso__titulo">MUSEO EN MANTENIMIENTO</h2>
+        <p class="aviso__texto">The Metallica Black Box está cerrado mientras subimos nuevas cápsulas, audio y video inéditos. Vuelve pronto; mientras tanto puedes seguir explorando el resto de la página.</p>
+        <div class="aviso__progreso">
+          <div class="aviso__barra"><span></span></div>
+          <p class="texto-pequeno">Actualización en curso · 70 %</p>
+        </div>
+        <form class="aviso__acciones" data-formulario>
+          <input class="aviso__campo" type="email" placeholder="tucorreo@ejemplo.com" aria-label="Correo electrónico">
+          <button type="submit" class="boton boton--rojo">Avísame cuando abra</button>
+          <button type="button" class="boton boton--claro" data-cerrar>Entendido</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- SCRIPTS 777 -->
+  <script src="script.js?v=aria-1"></script>
+</body>
+</html>

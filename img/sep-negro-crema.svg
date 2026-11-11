@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1920" height="220" viewBox="0 0 1920 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Separador rayo">
+<rect width="1920" height="220" fill="#F6F2EE"/>
+<path id="Corte" d="M0 0H1920V190L0 30V0Z" fill="black"/>
+<path id="Rayo 1" d="M1380 145L1520 156.7L960 78L1380 145Z" fill="#F6F2EE"/>
+<path id="Rayo 2" d="M560 76.7L660 85L260 42L560 76.7Z" fill="#F6F2EE"/>
+</g>
+</svg>

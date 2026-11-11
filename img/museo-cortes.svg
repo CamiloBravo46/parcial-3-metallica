@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1920" height="1000" viewBox="0 0 1920 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Capa 3 &#194;&#183; Cortes diagonales (desplazamiento r&#195;&#161;pido)" clip-path="url(#clip0_0_5)">
+<path id="Corte superior" d="M0 0H1920V200L0 70V0Z" fill="#F6F2EE"/>
+<path id="Rayo superior" d="M640 60L1220 150L1160 156L640 60Z" fill="#F6F2EE"/>
+<path id="Corte inferior" d="M0 930L1920 790V1000H0V930Z" fill="#F6F2EE"/>
+<path id="Rayo inferior" d="M1300 850L1780 930L1720 922L1300 850Z" fill="#F6F2EE"/>
+</g>
+<defs>
+<clipPath id="clip0_0_5">
+<rect width="1920" height="1000" fill="white"/>
+</clipPath>
+</defs>
+</svg>
